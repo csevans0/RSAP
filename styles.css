@@ -1,0 +1,259 @@
+/*  GENERAL STYLES  */
+html
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background: dimgrey;
+    font-family: sans-serif;
+}
+
+header
+{
+    margin-bottom: 1em;
+}
+
+.centered
+{
+    margin: 0 auto;
+    padding: 0 5em;
+}
+
+#animation_container
+{
+    margin: auto;
+    left:0;right:0;
+    top:0;bottom:0;
+}
+
+
+/*  NAVIGATION  */
+
+nav
+{
+    background: black;
+    margin-bottom: 1em;
+}
+
+nav ul
+{
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav li
+{
+    text-align: center;
+}
+
+nav li a
+{
+    background: yellow;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+a:active
+{
+    color: grey;
+}
+
+
+/*  FOOTER  */
+
+footer
+{
+    background-color: black;
+    margin-top: 1em;
+    color: ghostwhite;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a
+{
+    color: yellow;
+}
+
+
+/*  ARTICLE CONTENT  */
+
+article
+{
+    margin-bottom: 2em;
+}
+
+
+/*  SIDEBAR  */
+
+aside
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sidebar-section
+{
+    background-color: ghostwhite;
+    margin-bottom: 1em;
+    flex: 0 1 calc(33% - 1em);
+}
+
+.sidebar-info p
+{
+    text-align: center;
+}
+
+.sidebar-section img
+{
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+/*   CAUSES   */
+
+.causetype img
+{
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+.causes
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.causetype
+{
+    background-color: ghostwhite;
+    margin-bottom: 1em;
+    flex: 00 1 calc(33% - 1em);
+}
+
+.info
+{
+    padding: 10px;
+}
+
+.info h3
+{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+/*  MEDIUM SCREENS  */
+
+@media screen and (max-width: 900px)
+{
+    header img
+{
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+    
+}
+    
+    .centered
+    {
+        padding: 0 3em;
+    }
+    
+    .sidebar-section
+    {
+         flex: 0 1 calc(50% - 1em);
+        
+    }
+    
+    .causetype
+    {
+        flex: 0 1 calc(50% - 1em);
+    }
+    
+    nav ul
+    {
+        padding: 15px;
+    }
+    
+    nav li a
+    {
+        padding: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+}
+
+
+/*  SMALL SCREENS  */
+    
+@media screen and (max-width: 400px)
+{
+    header img
+    {
+        
+    }
+    
+    .centered
+    {
+        padding: 0 1em;
+    }
+    
+    .sidebar-section
+    {
+        flex: 0 1 100%; 
+    }
+    
+    .causetype
+    {
+        flex: 0 1 100%;
+    }
+    
+    nav ul
+    {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav li
+    {
+        text-align: center;
+    }
+    
+    nav a
+    {
+        display: block;
+        padding: 15px;
+    }
+}
